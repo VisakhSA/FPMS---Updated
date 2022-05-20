@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generation</title>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js" 
+            integrity=
+    "sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A==" 
+            crossorigin="anonymous">
+        </script>
+</head>
+<body>
+    <div id="download data">
+    <h5>Faculty Name: <%= udata.name %></h5>
+    <h5>Title: <%= udata.title %></h5>
+    <h5>Description: <%= udata.desc %></h5>
+    <h5>Created On: <%= date%></h5>
+    <h5>Image proof for the work done:</h5>
+    <img src="data:udata/<%=udata.img.contentType%>;base64,
+                     <%=udata.img.data.toString('base64')%>" width="500" 
+                     height="500"><br>
+    </div>
+    <input type="button" onclick="GeneratePdf();" value="Download">
+    <script>          
+        function GeneratePdf() {
+            var element = document.getElementById('download data');
+            html2pdf(element,{
+                margin:       1,
+                filename:     `<%= udata.name %> - <%= udata.title %>.pdf`,
+                image:        { type: 'png', quality: 0.98 },
+                html2canvas:  { dpi: 300,
+                                letterRendering: true,
+                                useCORS: true },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+});
+        }
+    </script>
+</body>
+</html>

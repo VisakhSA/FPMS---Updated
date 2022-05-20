@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DateRange</h1>
+    <form action="/admin/datefilter" method="POST">
+        <label>Start Date</label>
+        <input type="date" name="startdate"><br>
+        <label>End Date</label>
+        <input type="date" name="enddate"><br>
+        <label>Faculty name</label>
+        <select name="facname" id="facname">
+            <% for(var i of facarr) { %>
+                <option value="<%= i%>"><%= i%></option>
+            <% } %>
+          </select>
+        <input type="submit">
+    </form>
+</body>
+</html>
