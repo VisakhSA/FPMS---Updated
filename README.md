@@ -10,4 +10,5 @@
 - Create a databse named FPMS
 - Enter the database and add collections named Admin,Faculty,Uploads in it
 - The add a record in to Admin collection as shown in the below picture
+
 ![Example screenshot](./fpms images/Admin-record.png)
