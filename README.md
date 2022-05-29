@@ -12,4 +12,8 @@
 - The add a record in to Admin collection as shown in the below picture
 ![Admin-record](https://github.com/VisakhSA/FPMS---Updated/blob/master/fpms%20images/Admin-record.png)
 - Enter the fpms backend folder and add the mailid and password of the admin in .env file as shown in picture
-![MailidPW]()
+![MailidPW](https://github.com/VisakhSA/FPMS---Updated/blob/master/fpms%20images/MailPW.png)
+- Now enter in to the directory of fpms backend and fpms frontend folder and run the command `npm install`
+- This will install all the libraries needed for the application to work.
+- Now enter in to the directory of fpms backend and fpms frontend folder and run the command `npm start`
+- The application will become accessible at `http://localhost:3000/login`
