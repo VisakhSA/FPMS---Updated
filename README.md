@@ -11,4 +11,4 @@
 - Enter the database and add collections named Admin,Faculty,Uploads in it
 - The add a record in to Admin collection as shown in the below picture
 
-![Example screenshot](./fpms images/Admin-record.png)
+![Example screenshot](https://github.com/VisakhSA/FPMS---Updated/blob/master/fpms%20images/Admin-record.png)
