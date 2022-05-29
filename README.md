@@ -1,6 +1,6 @@
 # Faculty Portfolio Management System
 - A Faculty Portfolio Management System is an application which helps to manage the records of the faculties regarding the trainings undertaken, journals published, etc.
-- It helps an educational institution to track the various activities and accolades received by the teachers.
+- It helps an educational institution to track the various activities and accolades received by the faculties.
 - A detailed report can be generated out of the record submitted by the faculties and can be downloaded.
 
 # Steps to run the application on local Machine
