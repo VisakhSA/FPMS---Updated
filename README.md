@@ -10,5 +10,6 @@
 - Create a databse named FPMS
 - Enter the database and add collections named Admin,Faculty,Uploads in it
 - The add a record in to Admin collection as shown in the below picture
-
-![Example screenshot](https://github.com/VisakhSA/FPMS---Updated/blob/master/fpms%20images/Admin-record.png)
+![Admin-record](https://github.com/VisakhSA/FPMS---Updated/blob/master/fpms%20images/Admin-record.png)
+- Enter the fpms backend folder and add the mailid and password of the admin in .env file as shown in picture
+![MailidPW]()
